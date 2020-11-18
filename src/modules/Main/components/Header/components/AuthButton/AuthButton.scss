@@ -1,0 +1,26 @@
+.Auth-Button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #000000;
+  border: 1px solid #babfd0;
+  margin-right: 10px;
+
+  &.Dropdown {
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+
+    .p-inputtext {
+      color: #000;
+    }
+
+    .History-Link {
+      text-decoration: none;
+      color: #495057;
+    }
+  }
+}

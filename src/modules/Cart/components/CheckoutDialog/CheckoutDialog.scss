@@ -1,0 +1,41 @@
+.Checkout {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 30px 60px;
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+
+  .p-dialog-header-close {
+    position: absolute;
+    top: -2.75rem;
+    right: -4rem;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out 0s;
+    color: #fff;
+    font-size: 1.5rem;
+
+    &:hover {
+      transform: scale(1.11);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .p-dialog-title {
+    font-size: 36px;
+    margin-bottom: 1.25rem;
+  }
+
+  @media (max-width: 991px) {
+    max-width: 80%;
+  }
+}
+
+.p-dialog-mask.p-component-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}

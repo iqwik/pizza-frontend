@@ -1,0 +1,44 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["airbnb", "plugin:react-hooks/recommended"],
+  "plugins": ["react", "import"],
+  "rules": {
+    "semi": ["error", "never"],
+    "indent": ["error", 4, { "ignoredNodes": ["JSXElement *"] }],
+    "template-curly-spacing" : "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/mouse-events-have-key-events": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "react/jsx-closing-bracket-location": ["error", { "selfClosing": "props-aligned", "nonEmpty": "props-aligned" }],
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-indent": ["error", 4],
+    "react/jsx-indent-props": ["error", 4],
+    "react/jsx-props-no-spreading": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-array-index-key": "off",
+    "react/self-closing-comp": "off",
+    "react/state-in-constructor": "off",
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
+    "no-underscore-dangle": [2, { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"] }],
+    "import/no-named-as-default": "off",
+    "import/prefer-default-export": "off",
+    "max-len": "off"
+  }
+}

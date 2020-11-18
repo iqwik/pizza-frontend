@@ -1,0 +1,27 @@
+.Header {
+  max-width: 999px;
+  margin: auto;
+
+  &-Logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  &-Nav {
+    display: flex;
+    justify-content: space-between;
+    min-height: 40px;
+    padding: 0.75rem 3.25rem;
+  }
+
+  @media (max-width: 1290px) {
+    max-width: 90%;
+  }
+
+  &-Buttons {
+    display: flex;
+  }
+}

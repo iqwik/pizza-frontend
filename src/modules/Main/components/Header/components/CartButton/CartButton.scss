@@ -1,0 +1,24 @@
+.Cart-Button {
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid rgb(255, 105, 0);
+  font-weight: 500;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 12px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  transition-property: border-color, background, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  background: rgb(255, 105, 0);
+  color: rgb(255, 255, 255);
+  min-width: 90px;
+
+  &:disabled {
+    opacity: .5;
+  }
+}

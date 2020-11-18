@@ -1,0 +1,65 @@
+.History {
+  height: 100%;
+
+  &-Col {
+    flex: 1 1 25%;
+  }
+
+  &-Items, &-Totals {
+    padding-right: 20px;
+
+    & > div {
+      display: flex;
+      align-items: center;
+
+      & > p {
+        text-align: right;
+        display: inline-block;
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.25;
+      }
+    }
+  }
+
+  &-Totals {
+    flex: 0 1 100px;
+    max-width: 100px;
+    padding-right: 40px;
+    padding-left: 20px;
+
+    & > div {
+      & > p:first-child {
+        text-align: left;
+      }
+    }
+  }
+
+  &-Items {
+    & > div {
+      padding-bottom: .5rem;
+      border-bottom: 1px dashed #dedede;
+      margin-bottom: .5rem;
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      & > h3 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-Delivery > p, &-Date > p {
+    font-size: 13px;
+    line-height: 1.25;
+    padding-right: 28px;
+  }
+
+  .Order-Cart-Grid {
+    margin-bottom: 1rem;
+  }
+}

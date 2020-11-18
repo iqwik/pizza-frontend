@@ -1,0 +1,56 @@
+.Cart-Grid {
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  &-Articles {
+    max-height: 700px;
+    overflow: auto;
+  }
+
+  &-Thumb {
+    width: 80px;
+    height: 80px;
+  }
+
+  &-Item {
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e2e9;
+
+    figure {
+      margin-right: 20px;
+    }
+  }
+
+  &-Item:last-child {
+    border-bottom: none;
+  }
+
+  &-Flex, &-Item-Cost {
+    display: flex;
+  }
+
+  &-Col-2, &-W-100 {
+    width: 100%;
+  }
+
+  &-W-100, &-Item-Cost {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-Price {
+    font-size: 22px;
+  }
+
+  .Pizza-Grid-Button {
+    display: block;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }
+}

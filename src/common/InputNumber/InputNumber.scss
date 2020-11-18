@@ -1,0 +1,44 @@
+.Counter {
+  position: relative;
+  width: 96px;
+  height: 32px;
+  display: flex;
+  border: 1px solid rgb(211, 213, 222);
+  box-sizing: border-box;
+  border-radius: 8px;
+  justify-content: space-between;
+
+  .p-inputnumber-input {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    color: rgb(69, 75, 84);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    width: 20px;
+    text-align: center;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .p-counter-button {
+    margin: 0px;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    vertical-align: top;
+    height: 100%;
+    padding: 0px 8px;
+    width: 35.41%;
+    border: none;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+}

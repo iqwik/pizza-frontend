@@ -1,0 +1,21 @@
+.trash {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  flex: 0 0 auto;
+  cursor: pointer;
+
+  path {
+    transform-origin: 17px 5px;
+    transition: transform 0.2s ease-in-out 0s, fill;
+  }
+
+  &:hover path:first-child {
+    fill: rgb(255, 105, 0);
+  }
+
+  &:hover path:not(:first-child) {
+    transform: rotate(10deg);
+    fill: rgb(255, 105, 0);
+  }
+}
