@@ -1,7 +1,7 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Redirect } from 'react-router-dom'
 import Dropdown from '../../../../../../common/Dropdown'
 import * as selectors from '../../../../../Auth/model/selectors'
 import * as actions from '../../../../../Auth/model/actions'
@@ -13,14 +13,17 @@ const authMenu = [
 ]
 
 const AuthButton = ({ logoutUser, userData }) => {
-    const historyLink = useRef()
-    const onChange = (value) => {
-        if (value === 'History') {
-            historyLink.current.click()
-        } else if (value === 'Log out') {
+    const [dropdownValue, setDropdownValue] = useState(null)
+    const [doRedirect, setDoRedirect] = useState(false)
+
+    useEffect(() => {
+        if (dropdownValue === 'History') {
+            setDoRedirect(dropdownValue)
+        } else if (dropdownValue === 'Log out') {
             logoutUser()
         }
-    }
+    }, [dropdownValue])
+
     return (
         userData?.id ? (
             <>
@@ -30,10 +33,10 @@ const AuthButton = ({ logoutUser, userData }) => {
                     optionValue="value"
                     options={authMenu}
                     placeholder={userData.name}
-                    onChange={({ value }) => onChange(value)}
+                    onChange={({ value }) => setDropdownValue(value)}
                     style={{ marginRight: '10px' }}
                     />
-                <NavLink style={{ display: 'none' }} innerRef={historyLink} to="auth" />
+                {doRedirect ? <Redirect to="/auth" /> : null}
             </>
         ) : (
             <NavLink className="Auth-Button" to="auth">Login</NavLink>

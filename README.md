@@ -24,6 +24,9 @@ According to use browser-sync-webpack-plugin in develop mode,
 you should set `localhost = 'http://your.site'` (webpack.config.js)
     
 Install:
+1. Put all files from Repo to your root directory of project.
+2. Create `api` folder (here, in the root directory) and all content from repo: https://github.com/iqwik/pizza-backend
+place there. 
 ```
 yarn
 ```
