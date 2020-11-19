@@ -36,8 +36,11 @@ __Production:__
 yarn build
 ```
 
+- bundle and other static files will be placed here(in the root): `index.php` and `assets/*`
+
 __Develop:__
 ```
 yarn dev
 yarn eslint
 ```
+- for develop you need only `src` folder
