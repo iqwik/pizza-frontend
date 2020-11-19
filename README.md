@@ -23,7 +23,7 @@ __Config to start:__
 According to use browser-sync-webpack-plugin in develop mode,
 you should set `localhost = 'http://your.site'` (webpack.config.js)
     
-Install:
+__Installation:__
 1. Put all files from Repo to your root directory of project.
 2. Create `api` folder (here, in the root directory) and all content from repo: https://github.com/iqwik/pizza-backend
 place there. 
@@ -31,12 +31,12 @@ place there.
 yarn
 ```
 
-Production:
+__Production:__
 ```
 yarn build
 ```
 
-Develop:
+__Develop:__
 ```
 yarn dev
 yarn eslint

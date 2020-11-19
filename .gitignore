@@ -3,5 +3,7 @@ api/
 node_modules/
 debug.log
 yarn.lock
+assets/js/
 assets/*.js
 assets/*.json
+index.php
